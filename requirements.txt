@@ -2,7 +2,7 @@ aiohappyeyeballs==2.6.1
 aiohttp==3.13.5
 aiosignal==1.4.0
 alembic==1.18.4
--e git+https://github.com/adhithyan-s/arm-early-warning.git@023158b3d78c2ed8c86604fce169de1882edf8a3#egg=amr_early_warning
+-e git+https://github.com/adhithyan-s/arm-early-warning.git@30ff7ac1753318a1695a04528479300973d9ec81#egg=amr_early_warning
 annotated-doc==0.0.4
 annotated-types==0.7.0
 anyio==4.13.0
