@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import mlflow
 import mlflow.sklearn
 import mlflow.lightgbm
@@ -9,7 +8,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from pathlib import Path
 import logging
-import yaml
 import joblib
 import json
 
@@ -234,7 +232,7 @@ def train_lightgbm(
         model_dir = Path("models")
         model_dir.mkdir(exist_ok=True)
         joblib.dump(model, model_dir / "lgbm_model.pkl")
-        logger.info(f"Model saved to models/lgbm_model.pkl")
+        logger.info("Model saved to models/lgbm_model.pkl")
 
         metadata = {
             "feature_cols": FEATURE_COLS,

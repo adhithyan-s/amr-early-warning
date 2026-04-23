@@ -5,7 +5,6 @@ import numpy as np
 from src.features.engineer import (
     build_features,
     _compute_lag_features,
-    _compute_rolling_features,
     _compute_trend_slope,
     _compute_regional_features,
     _compute_data_quality_features,

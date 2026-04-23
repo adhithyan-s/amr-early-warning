@@ -1,5 +1,4 @@
 import pandas as pd
-import pandera.pandas as pa
 from pandera.pandas import Column, DataFrameSchema, Check
 import logging
 

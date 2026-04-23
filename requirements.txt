@@ -2,7 +2,7 @@ aiohappyeyeballs==2.6.1
 aiohttp==3.13.5
 aiosignal==1.4.0
 alembic==1.18.4
--e git+https://github.com/adhithyan-s/arm-early-warning.git@30ff7ac1753318a1695a04528479300973d9ec81#egg=amr_early_warning
+-e git+https://github.com/adhithyan-s/arm-early-warning.git@f5504a9e0abb01dac8db78274e2c541fe5b4d32d#egg=amr_early_warning
 annotated-doc==0.0.4
 annotated-types==0.7.0
 anyio==4.13.0
@@ -98,6 +98,7 @@ pytz==2026.1.post1
 PyYAML==6.0.3
 pyzmq==27.1.0
 requests==2.33.1
+ruff==0.15.11
 scikit-learn==1.8.0
 scipy==1.17.1
 seaborn==0.13.2

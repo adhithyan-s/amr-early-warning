@@ -1,8 +1,6 @@
 import pytest
 import pandas as pd
 from pathlib import Path
-import tempfile
-import os
 
 from src.data.loaders import _parse_ecdc_file, _load_combination, load_ecdc_data
 

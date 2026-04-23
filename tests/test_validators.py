@@ -1,6 +1,5 @@
 import pytest
 import pandas as pd
-import pandera.pandas as pa
 
 from src.data.validators import validate_ecdc_data
 
