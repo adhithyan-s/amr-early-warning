@@ -1,0 +1,39 @@
+{
+  "feature_cols": [
+    "lag_1yr",
+    "lag_2yr",
+    "lag_3yr",
+    "rolling_mean_3yr",
+    "rolling_mean_5yr",
+    "rolling_std_3yr",
+    "rolling_std_5yr",
+    "slope_3yr",
+    "slope_5yr",
+    "regional_avg_excl_self",
+    "log_num_isolates",
+    "years_of_data"
+  ],
+  "feature_medians": {
+    "lag_1yr": 10.507788245,
+    "lag_2yr": 10.31518624,
+    "lag_3yr": 9.89583333,
+    "rolling_mean_3yr": 10.39229111,
+    "rolling_mean_5yr": 9.966810842,
+    "rolling_std_3yr": 1.3904318480666218,
+    "rolling_std_5yr": 1.891309017660453,
+    "slope_3yr": 0.08912655499999997,
+    "slope_5yr": 0.1389564970000001,
+    "regional_avg_excl_self": 17.184019812272727,
+    "log_num_isolates": 5.996452088619021,
+    "years_of_data": 7.0
+  },
+  "cutoff_year": 2020,
+  "forecast_horizon": 2,
+  "model_type": "LightGBM",
+  "metrics": {
+    "mae": 3.6019,
+    "rmse": 6.0616,
+    "r2": 0.9211,
+    "n_samples": 564
+  }
+}
