@@ -1,0 +1,13 @@
+cat > ruff.toml << 'EOF'
+exclude = [
+    ".venv",
+    "*.egg-info",
+    "__pycache__",
+    "*.ipynb",
+    ".git",
+]
+
+[lint]
+select = ["E", "F", "W"]
+ignore = ["E402"]
+EOF
