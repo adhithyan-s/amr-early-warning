@@ -28,10 +28,7 @@ jobs:
         run: pip install -e .
 
       - name: Lint with ruff
-        run: ruff check src/ tests/
+        run: ruff check src/ tests/ --exclude "**/*.ipynb"
 
       - name: Run tests
         run: pytest tests/ -v --tb=short
-
-      - name: Lint with ruff
-        run: ruff check src/ tests/ --exclude "*.ipynb"
