@@ -90,23 +90,23 @@ mlflow ui
 ECDC EARS-Net CSVs (20 files, 2000–2024)
         │
         ▼
-loaders.py ── merge resistant count + percentage files
-        │       derive NumIsolates from N and pct files
+loaders.py ── merge resistant count + percentage files derive NumIsolates from N and pct files
+        │       
         ▼
-validators.py ── Pandera schema validation
-        │         type checks, range checks, row-level integrity
+validators.py ── Pandera schema validation type checks, range checks, row-level integrity
+        │         
         ▼
-engineer.py ── 12 feature engineering steps
-        │       lag features, rolling stats, slope, regional avg
+engineer.py ── 12 feature engineering steps lag features, rolling stats, slope, regional avg
+        │       
         ▼
-train.py ── temporal split → Ridge baseline + LightGBM
-        │    MLflow experiment tracking, model artifacts saved
+train.py ── temporal split → Ridge baseline + LightGBM MLflow experiment tracking, model artifacts saved
+        │    
         ▼
-app.py (FastAPI) ── REST API
-        │            POST /predict  GET /health  GET /combinations
+app.py (FastAPI) ── REST API POST /predict  GET /health  GET /combinations
+        │            
         ▼
-app.py (Streamlit) ── 3-page interactive UI
-                       Resistance Explorer | Forecast | Model Info
+app.py (Streamlit) ── 3-page interactive UI Resistance Explorer | Forecast | Model Info
+                       
 ```
 
 ---
