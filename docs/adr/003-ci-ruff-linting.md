@@ -7,8 +7,8 @@ Resolved
 After setting up GitHub Actions CI with ruff linting, the pipeline consistently failed despite local linting passing cleanly. The error messages showed paths like `src/amr-early-warning/src/models/train.py` which don't exist in the repository.
 
 ## Root Cause
-When GitHub Actions checks out a repo named `arm-early-warning`, the runner workspace path becomes:
-`/home/runner/work/arm-early-warning/arm-early-warning/`
+When GitHub Actions checks out a repo named `amr-early-warning`, the runner workspace path becomes:
+`/home/runner/work/amr-early-warning/amr-early-warning/`
 
 Running `ruff check src/ tests/` from this directory causes ruff to report paths relative to the parent workspace, making them appear as `src/amr-early-warning/src/...`. 
 This is a display artifact, but the real issue was that `pip install -e .` creates an `amr_early_warning.egg-info` 

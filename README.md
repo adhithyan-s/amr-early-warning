@@ -2,7 +2,7 @@
 
 > A production-grade machine learning system that forecasts antibiotic resistance rates 2 years ahead across 31 European countries, built on real ECDC EARS-Net surveillance data.
 
-[![CI](https://github.com/adhithyan-s/arm-early-warning/actions/workflows/ci.yml/badge.svg)](https://github.com/adhithyan-s/arm-early-warning/actions/workflows/ci.yml)
+[![CI](https://github.com/adhithyan-s/amr-early-warning/actions/workflows/ci.yml/badge.svg)](https://github.com/adhithyan-s/amr-early-warning/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![LightGBM](https://img.shields.io/badge/model-LightGBM-orange)
 ![FastAPI](https://img.shields.io/badge/API-FastAPI-009688)
@@ -162,8 +162,8 @@ amr-early-warning/
 
 ```bash
 # 1. Clone and create environment
-git clone https://github.com/adhithyan-s/arm-early-warning.git
-cd arm-early-warning
+git clone https://github.com/adhithyan-s/amr-early-warning.git
+cd amr-early-warning
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
